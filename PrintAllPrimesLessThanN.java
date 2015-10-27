@@ -12,7 +12,7 @@ public class PrintAllPrimesLessThanN {
 			isPrime[i] = true;
 		}
 		
-		// set non-primes to false using Sieve of Eratosthenes
+		// make non-primes false using Sieve of Eratosthenes
 		for(int i = 2; i <= Math.sqrt(N); i++){
 			if(isPrime[i]){
 				for(int k = i; i * k <= N; k++){
