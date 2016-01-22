@@ -3,7 +3,7 @@
 # (Note: if implementing in Java, please use a character array so that you can perform this operation in place.)
 
 def URLify(str, size):
-	str = str[:size]				# cut off excess spaces in the string
+	str = str[:size]					# cut off excess spaces in the string
 	str = str.replace(" ", "%20")			# replace remaining spaces with '%20'
 	return str
 
