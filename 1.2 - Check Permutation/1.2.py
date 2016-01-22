@@ -7,10 +7,10 @@ def checkPermutation(str1, str2):				# This solution doesn't really "modify" the
 	str2 = sorted(str2)					# and str2 alphabetically
 	return str1 == str2					# check if they're the same
 
-str1 = "lrigg"							# Test case 1
+str1 = "lrigg"							# Test case 1 (true)
 str2 = "girlg"
 print (checkPermutation(str1, str2))
 
-str3 = "cow"							# Test Case 2
+str3 = "cow"							# Test Case 2 (false)
 str4 = "cot"
 print (checkPermutation(str3, str4));
