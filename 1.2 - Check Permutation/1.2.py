@@ -1,6 +1,6 @@
 # Given two strings, write a method to decide if one is a permutation of the other.
 
-def checkPermutation(str1, str2):		# This solution doesn't really "modify" the strings since Python is pass-by-value
+def checkPermutation(str1, str2):				# This solution doesn't really "modify" the strings since Python is pass-by-value
 	if(len(str1) != len(str2)):
 		return False
 	str1 = sorted(str1)					# sort str1
