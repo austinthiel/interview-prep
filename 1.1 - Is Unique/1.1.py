@@ -11,11 +11,11 @@ def isUnique(word):
 		A.append(char)				# otherwise, add the char to the array
 	return True;					# if this point is reached, the word is unique
 
-word = "apples"						# Test case 1
+word = "apples"						# Test case 1 (false)
 A = []
 print(isUnique(word))
 
-word = "dog"						# Test case 2
+word = "dog"						# Test case 2 (true)
 A = []
 print(isUnique(word))
 
