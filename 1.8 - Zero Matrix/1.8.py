@@ -2,7 +2,7 @@
 
 def zeroMatrix(A):
 	rows = len(A)
-	cols = len(A[0])						# assuming the array is not jagged
+	cols = len(A[0])							# assuming the array is not jagged
 	rowStor = []
 	colStor = []
 	for j in range(cols):
