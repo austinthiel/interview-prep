@@ -6,13 +6,13 @@ import LinkedList
 def removeDups(myList):
 	if myList.isEmpty():
 		return myList
-	A = []									# alternatively use a hash set for constant time access
+	A = []						# alternatively use a hash set for constant time access
 	curr = myList.head
 	while curr != None:
-		if curr.getData() not in A:			# compare current node against stored unique values 
+		if curr.getData() not in A:		# compare current node against stored unique values 
 			A.append(curr.getData())		
 		else:
-			myList.remove(curr)				# remove duplicate nodes and reconnect the linked list
+			myList.remove(curr)		# remove duplicate nodes and reconnect the linked list
 		curr = curr.next
 	return myList
 
@@ -24,7 +24,7 @@ myList.add(3)
 myList.add(2)
 myList.add(1)
 
-curr = myList.head							# print original list
+curr = myList.head					# print original list
 while curr != None:
 	print(curr.getData(), end=" ")
 	curr = curr.next
@@ -32,7 +32,7 @@ print()
 
 removeDups(myList)
 
-curr = myList.head							# print "unduped" list
+curr = myList.head					# print "unduped" list
 while curr != None:
 	print(curr.getData(), end=" ")
 	curr = curr.next
