@@ -1,3 +1,9 @@
+# This generic was pulled from the following link:
+#
+# http://interactivepython.org/runestone/static/pythonds/BasicDS/ImplementinganUnorderedListLinkedLists.html
+#
+# I made the assumption that these are the basic methods I would have access to during a whiteboard interview.
+
 class Node:
   def __init__(self,initdata):
     self.data = initdata
