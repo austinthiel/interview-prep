@@ -4,7 +4,7 @@
 def stringRotation(s1, s2):
 	s1Len = len(s1)
 	if s1Len == len(s2) and s1Len > 0:		# rule out different length/empty strings
-		s2 += s2				# double up on the rotated string to produce a possible substring of s1 within s2
+		s2 += s2					# double up on the rotated string to produce a possible substring of s1 within s2
 		return isSubstring(s1, s2)
 	return False
 
