@@ -4,7 +4,7 @@
 import LinkedList
 
 def returnKthToLast(head, k):					# no need to take in the whole linked list, we just need the head
-	if head == None:					# recurse when the head is a Nonetype (end of the list)
+	if head == None:						# recurse when the head is a Nonetype (end of the list)
 		return 0
 	count = returnKthToLast(head.next, k) + 1		# increment and go deeper!
 	if count == k:
