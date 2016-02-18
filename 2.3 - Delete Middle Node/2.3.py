@@ -5,13 +5,13 @@ import LinkedList
 
 def deleteMiddleNode(n):
 	if n == None or n.next == None:
-		return False 							# Null nodes and tail nodes cannot be removed with this method
+		return False 				# Null nodes and tail nodes cannot be removed with this method
 	m = n.next
 	n.data = m.data
 	n.next = m.next
 	return True
 
-myList = LinkedList.UnorderedList()				# Test case 1
+myList = LinkedList.UnorderedList()			# Test case 1
 myList.add(18)
 myList.add(15)
 myList.add(12)
