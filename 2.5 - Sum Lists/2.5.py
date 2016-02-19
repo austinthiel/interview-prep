@@ -47,5 +47,4 @@ List2.add(5)
 sumLists(List1.head, List2.head)
 
 # Follow up: Suppose the digits are stored in forward order. Repeat the above problem.
-
 # Solution: concat num1/2 to strings, reverse them, add them, and construct the list in non-reversed order
