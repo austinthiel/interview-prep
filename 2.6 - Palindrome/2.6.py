@@ -3,7 +3,7 @@
 import LinkedList
 import Stack
 
-def checkPalindrome(listHead):							# Note: if given the length of the LL, this could be solved recursively
+def checkPalindrome(listHead):					# Note: if given the length of the LL, this could be solved recursively
 	current = listHead
 	s = Stack.Stack()
 	while current != None:
@@ -17,7 +17,7 @@ def checkPalindrome(listHead):							# Note: if given the length of the LL, this
 		current = current.next
 	return s.isEmpty()
 
-theList = LinkedList.UnorderedList()					# Test Case 1 
+theList = LinkedList.UnorderedList()				# Test Case 1 
 theList.add(1)
 theList.add(2)
 theList.add(3)
