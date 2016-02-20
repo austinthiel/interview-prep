@@ -12,7 +12,7 @@ def checkPalindrome(listHead):					# Note: if given the length of the LL, this c
 
 	current = listHead
 	sCurr = s.pop()
-	while sCurr == current.data and not s.isEmpty():	# Compare the "forward" data in the LL to the "backward" data pushed onto the stack
+	while sCurr == current.data and not s.isEmpty():		# Compare the "forward" data in the LL to the "backward" data pushed onto the stack
 		sCurr = s.pop()
 		current = current.next
 	return s.isEmpty()
